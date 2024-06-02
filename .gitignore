@@ -24,4 +24,3 @@ pnpm-debug.log*
 .idea/
 .vscode/launch.json
 .vscode/extensions.json
-package-lock.json
