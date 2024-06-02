@@ -6,7 +6,7 @@ const { pathname } = Astro.url;
 	<li>
 		<a
 			class={`bg-emerald-600 hover:bg-amber-600 text-white p-4`}
-			href="/"
+			href="/devcourse"
 		>
 			Inicio
 		</a>
@@ -17,7 +17,7 @@ const { pathname } = Astro.url;
 	<li>
 		<a
 			class={`${pathname === "/nosotros" ? "bg-red-800" : "bg-slate-700"} text-white p-4`}
-			href="/nosotros"
+			href="/devcourse/nosotros"
 		>
 			Nosotros {pathname === "/nosotros"}
 		</a>
@@ -25,7 +25,7 @@ const { pathname } = Astro.url;
 	<li>
 		<a
 			class={`${pathname === "/contenido" ? "bg-red-800" : "bg-slate-700"} text-white p-4`}
-			href="/contenido"
+			href="/devcourse/contenido"
 		>
 			Contenido
 		</a>
