@@ -7,5 +7,4 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://cencaladev.github.io',
   base: 'devcourse',
-  trailingSlash: "never",
 });
