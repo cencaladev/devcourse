@@ -1,12 +1,45 @@
-<ul class="menu">
-			<li>
-				<a href="/">Inicio</a>
-			</li>
-			<li>
-				<a href="/nosotros">Nosotros</a>
-			</li>
-			<li>
-				<a href="/contenido">Contenido</a>
-			</li>
-			
-		</ul>
+---
+const { pathname } = Astro.url;
+---
+
+<ul class="flex p-5 w-full justify-between">
+	<li>
+		<a
+			class={`bg-emerald-600 hover:bg-amber-600 text-white p-4`}
+			href="/"
+		>
+			Inicio
+		</a>
+	</li>
+	<li>
+		<a href="" class="enlace">test</a>
+	</li>
+	<li>
+		<a
+			class={`${pathname === "/nosotros" ? "bg-red-800" : "bg-slate-700"} text-white p-4`}
+			href="/nosotros"
+		>
+			Nosotros {pathname === "/nosotros"}
+		</a>
+	</li>
+	<li>
+		<a
+			class={`${pathname === "/contenido" ? "bg-red-800" : "bg-slate-700"} text-white p-4`}
+			href="/contenido"
+		>
+			Contenido
+		</a>
+	</li>
+</ul>
+<style>
+ .enlace {
+	background-color: blueviolet;
+	color: white;
+	padding: 19px;
+	border-radius: 5px;
+ }
+ .enlace:hover {
+	background-color: blue;
+	font-weight: bold;
+ }
+</style>
